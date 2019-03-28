@@ -1,1 +1,1 @@
-# Resort-SQL-queries
+Use SQL queries to pull specific data from Springboard’s Database. The data represents information of a resort with tables labelled facilities, members, and bookings. The queries pull relevant data regarding various tables and features. 
