@@ -99,7 +99,7 @@ SELECT facilities.name, concat(members.firstname, ' ', members.surname) AS user,
   FROM `Members` members
   JOIN `Bookings` bookings ON members.memid=bookings.memid
   JOIN `Facilities` facilities ON facilities.facid= bookings.facid
-	WHERE Bookings.starttime LIKE  '2012-09-14%'
+	WHERE bookings.starttime LIKE  '2012-09-14%'
   HAVING Cost >30
   ORDER BY cost DESC
 
@@ -112,7 +112,7 @@ SELECT facilities.name, concat(members.firstname, ' ', members.surname) AS user,
   FROM `Members` members
   JOIN `Bookings` bookings ON members.memid=bookings.memid
   JOIN `Facilities` facilities ON facilities.facid= bookings.facid
-	WHERE Bookings.starttime LIKE  '2012-09-14%'
+	WHERE bookings.starttime LIKE  '2012-09-14%'
   HAVING Cost >30
   ORDER BY cost DESC
 
